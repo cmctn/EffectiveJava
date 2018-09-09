@@ -1,4 +1,4 @@
-package item6;
+package Item6;
 
 public class Main6 {
 
