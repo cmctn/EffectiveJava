@@ -7,7 +7,14 @@ import java.util.Date;
 
 public class PersonDo {
 
+    // we can also reuse mutable objects, if we know they wont be modified
     private Date birthDate;   // ??? final
+
+
+    public PersonDo(Date birthDate) {
+        // Defensive copy - see Item 39
+        this.birthDate = new Date(birthDate.getTime());
+    }
     /**
      * this version avoids this enffiency with a static initializer.
      */

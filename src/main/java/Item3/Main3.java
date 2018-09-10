@@ -5,6 +5,8 @@ public class Main3 {
 
     public static void main(String[] args) {
 
+        // Before release 1.5 there were two ways to implement singletons (the first 2 implementations in our sample)
+
         // 1 final field
         SingletonFinalField.getINSTANCE().print();
 

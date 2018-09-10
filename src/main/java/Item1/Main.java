@@ -1,17 +1,19 @@
 package Item1;
 
+import java.util.HashMap;
+import java.util.Map;
+
 public class Main {
     /*
-    They have names.
-    They can cache.
-    They can subtype.
+    SFMs have names.
+    SFMs can cache.
+    SFMs can subtype.
     */
 
     public static void main(String[] args) {
         /**
-         * they have names
+         * SFMs have names
          */
-
         // 1. use constructors
         // tomato - #FF6347 - rgb(255,99,71)
         ColorDefault tomatoDefault = new ColorDefault(255, 99, 71);
@@ -23,34 +25,25 @@ public class Main {
         System.out.println("tomatoStatic.getHex() : " + tomatoStatic.getHex());
 
 
-        //3. use polymorphism and encapsulation
-        ColorOther tomatoOther = new RGBColorOther(255, 99, 71);
-        System.out.println(((RGBColorOther) tomatoOther).getOrigin()); // buradan getHex() 'e ulasamicak miyim??
-
-
         /**
-         * they can cache
+         * SFMs can cache
          */
-        // 1. use constructors
-        ColorDefault redDefault = new ColorDefault(255, 99, 71);
-        System.out.println("identityHashCode(tomatoDefault) : " + System.identityHashCode(tomatoDefault));
-        //will give the 'original' hash code of yourObject as an integer.
-        System.out.println("identityHashCode(redDefault) : " + System.identityHashCode(redDefault));
+        //this would create a new instance for every call
+        Byte b = new Byte( (byte) 65);
+
+        // On every call, the method valueOf() will returns the same
+        // instance of a Byte object representing the byte value 65.
+        Byte b2 = Byte.valueOf( (byte) 65);
+
+        System.out.println(b);
+        System.out.println(b2);
 
 
-        // 2. use static factory methods
-        // !!!! burada ayni degeri gormeyi bekliyordum
-        ColorStatic redStatic = ColorStatic.makeFromPalette(255, 99, 71);
-        System.out.println("identityHashCode(tomatoStatic) : " + System.identityHashCode(tomatoStatic));
-        System.out.println("identityHashCode(redStatic) : " + System.identityHashCode(redStatic));
-
-        //System.out.println("tomatoStatic.hashCode() : " + tomatoStatic.hashCode());
-        //System.out.println("redStatic.hashCode() : " + redStatic.hashCode());
 
 
-        /**
-         * they can subtype
-         */
+
+
+
     }
 
 

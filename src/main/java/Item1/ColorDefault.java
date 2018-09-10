@@ -17,6 +17,12 @@ public class ColorDefault {
         this.hex = h;
     }
 
+
+
+
+
+
+
     // subtype kiyaslamasi icin
     public ColorDefault lighter() {
         return new ColorDefault(hex + 0x111);

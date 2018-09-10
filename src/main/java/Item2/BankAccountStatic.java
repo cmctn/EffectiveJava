@@ -1,7 +1,7 @@
 package Item2;
 
 public class BankAccountStatic {
-    private long accountNumber; //This is important, so we'll pass it to the constructor.
+    private long accountNumber;
     private String owner;
     private String branch;
     private double balance;
