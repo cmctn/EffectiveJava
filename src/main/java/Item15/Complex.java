@@ -10,6 +10,7 @@ public class Complex {
         this.im = im;
     }
 
+    // immutable class with static factory 
     public static Complex valueOf(double re, double im) {
         return new Complex(re, im);
     }
@@ -18,6 +19,7 @@ public class Complex {
         return new Complex(r * Math.cos(theta), r * Math.sin(theta));
     }
 
+    // one easy way to provide public static final constants for frequently used values
     public static final Complex ZERO = new Complex(0, 0);
     public static final Complex ONE = new Complex(1, 0);
     public static final Complex I = new Complex(0, 1);

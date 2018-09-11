@@ -19,6 +19,8 @@ public class StackMemoryLeak {
         elements[size++] = e;
     }
 
+
+    // this way causes memory leak
 //    public Object pop() {
 //        if (size == 0)
 //            throw new EmptyStackException();

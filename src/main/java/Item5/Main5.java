@@ -1,8 +1,57 @@
 package Item5;
 
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
+
 public class Main5 {
 
     public static void main(String[] args) {
+
+        // immutable objects
+        // DON'T DO THIS
+        String s1 = new String("sample");
+
+        // DO
+        String s2 = "Sample";
+
+
+
+
+        // mutable objects
+        SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd");
+        try {
+            java.util.Date yourDate = sdf.parse("1946-07-26");
+
+            PersonDont p1 = new PersonDont(yourDate);
+            System.out.println(p1.isBabyBoomer());
+
+
+
+            PersonDo p2 = new PersonDo(yourDate);
+            System.out.println(p2.isBabyBoomer());
+
+        } catch (ParseException e) {
+            e.printStackTrace();
+        }
+
+
+
+        // slow program !!!!
+        // the variable sum is declared as a Long instead of a long
+        // which means the program constructs about 2^31 unnecessary Long instances !!!!
+        Long sum = 0L;
+        for (long i=0; i<=Integer.MAX_VALUE; i++){
+            sum += i;
+        }
+        /**
+         *
+         * prefer primitives to boxed primitives,
+         * and watch out for unintentional autoboxing.
+         *
+         */
+
+
+
 
 
     }

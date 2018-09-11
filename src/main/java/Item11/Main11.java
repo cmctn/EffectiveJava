@@ -21,7 +21,8 @@ public class Main11 {
 
         System.out.println(cloningSample.clone().toString());
 
-
+        // !!!!!!!
+        System.out.println(cloningSample.clone().equals(cloningSample));
 
 
     }

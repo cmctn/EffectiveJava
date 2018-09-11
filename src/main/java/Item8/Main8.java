@@ -2,6 +2,20 @@ package Item8;
 
 public class Main8 {
 
+    /**
+     * the contract
+     * ------------
+     * for any non-null references x,y,z
+     *
+     * reflexive : x.equals(x) must return true.
+     * symmetric : x.equals(y) must return true, if only and if y.equals(x) returns true.
+     * transitive : if x.equals(y) returns true, and y.equals(z) returns true
+     *              then x.equals(z) must return true.
+     * consistent : multiple invocations of x.equals(y) consistently return true or
+     *              consistenly return false.
+     * non-nullity(Joshua) :
+     */
+
 
     public static void main(String[] args) {
 
