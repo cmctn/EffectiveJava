@@ -9,9 +9,7 @@ public class SingletonFinalField {
 
 
     // cem
-    public static SingletonFinalField getINSTANCE() {
-        return INSTANCE;
-    }
+
 
     //  called when preparing the deserialized object before returning it to the caller.
 //    protected Object readResolve() {

@@ -10,7 +10,7 @@ public class Complex {
         this.im = im;
     }
 
-    // immutable class with static factory 
+    // immutable class with static factory
     public static Complex valueOf(double re, double im) {
         return new Complex(re, im);
     }
@@ -76,10 +76,10 @@ public class Complex {
         return (int) (longBits ^ (longBits >>> 32));
     }
 
-    @Override
-    public String toString() {
-        return "(" + re + " + " + im + "i)";
-    }
+//    @Override
+//    public String toString() {
+//        return "(" + re + " + " + im + "i)";
+//    }
 
 
 }

@@ -3,6 +3,12 @@ package Item4;
 // Noninstantiable utility class
 public class Utility {
 
+    static Utility u = new Utility();
+
+    public static Utility getB(){
+        return u;
+    }
+
     // Suppress default constructor for noninstantiability  !!!!
     private Utility() {
 

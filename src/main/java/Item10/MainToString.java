@@ -1,6 +1,6 @@
 package Item10;
 
-public class Main10 {
+public class MainToString {
 
     public static void main(String[] args) {
 

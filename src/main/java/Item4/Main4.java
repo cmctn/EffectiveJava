@@ -7,7 +7,7 @@ public class Main4 {
         //These utility classes weren’t designed to be instantiated: an instance would be nonsensical.
 
         //Utility utility = new Utility();
-
+        Utility u = Utility.getB();
     }
 
 

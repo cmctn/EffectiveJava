@@ -23,7 +23,7 @@ public class UseObjectsHashCode {
             return false;
         }
         UseObjectsHashCode user = (UseObjectsHashCode) o;
-        return age == user.age &&
+        return Objects.equals(age,user.age) &&
                 Objects.equals(name, user.name) &&
                 Objects.equals(passport, user.passport);
     }

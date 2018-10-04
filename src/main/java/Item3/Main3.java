@@ -8,7 +8,7 @@ public class Main3 {
         // Before release 1.5 there were two ways to implement singletons (the first 2 implementations in our sample)
 
         // 1 final field
-        SingletonFinalField.getINSTANCE().print();
+        SingletonFinalField.INSTANCE.print();
 
         // 2 static factory method
         SingletonStaticFactoryMethod.getInstance().printIt();

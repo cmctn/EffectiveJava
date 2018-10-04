@@ -1,6 +1,6 @@
 package Item15;
 
-public class Main15 {
+public class MainMinimizeMutability {
 
     public static void main(String[] args) {
 

@@ -3,6 +3,8 @@ package Item10;
 public class PhoneNumber {
 
     private final short areaCode, prefix, lineNum;
+    private volatile int hashCode;
+
 
     public PhoneNumber(int areaCode, int prefix, int lineNum) {
         this.areaCode = rangeCheck(areaCode, 999, "area code");
@@ -27,6 +29,18 @@ public class PhoneNumber {
                 && pn.areaCode == areaCode;
     }
 
+    @Override
+    public int hashCode() {
+        int result = hashCode;
+        if(result == 0){
+            result = 17; // Arbitrary number.
+            result = 31 * result + areaCode;
+            result = 31 * result + prefix; // 31 is an odd prime
+            result = 31 * result + lineNum;
+            hashCode = result;
+        }
+        return hashCode;
+    }
 
     @Override
     public String toString() {
@@ -35,18 +49,4 @@ public class PhoneNumber {
     }
 
 
-    /**
-     *
-     * item 11 - override clone
-     */
-    @Override
-    public PhoneNumber clone() {
-
-        try {
-            return (PhoneNumber) super.clone();
-        } catch (CloneNotSupportedException e){
-            throw new AssertionError();
-        }
-
-    }
 }

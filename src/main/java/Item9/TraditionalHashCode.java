@@ -20,7 +20,7 @@ public class TraditionalHashCode {
     public int hashCode() {
         int result = hashCode;
         if(result == 0){
-            result = 17; // Aribtrary number.
+            result = 17; // Arbitrary number.
             result = 31 * result + name.hashCode();
             result = 31 * result + age; // 31 is an odd prime
             result = 31 * result + passport.hashCode();

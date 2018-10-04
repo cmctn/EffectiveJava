@@ -26,7 +26,9 @@ public class UseObjects {
             return false;
         }
         UseObjects user = (UseObjects) o;
-        return age == user.age &&
+
+        // !!!!!
+        return Objects.equals(age, user.age) &&
                 Objects.equals(name, user.name) &&
                 Objects.equals(passport, user.passport);
     }

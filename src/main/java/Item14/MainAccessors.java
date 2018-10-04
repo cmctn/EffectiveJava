@@ -1,6 +1,6 @@
 package Item14;
 
-public class Main14 {
+public class MainAccessors {
 
     public static void main(String[] args) {
 
