@@ -1,4 +1,4 @@
-package Chapter2.Item10;
+package Chapter3.Item10;
 
 public class PhoneNumber {
 

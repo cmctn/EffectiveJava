@@ -1,4 +1,4 @@
-package Chapter2.Item8;
+package Chapter3.Item8;
 
 public class MainOverridingEquals {
 

@@ -1,4 +1,4 @@
-package Chapter1.Item2;
+package Chapter2.Item2;
 
 public class BankAccount {
 

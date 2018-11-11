@@ -1,4 +1,4 @@
-package Chapter1.Item4;
+package Chapter2.Item4;
 
 // Noninstantiable utility class
 public class Utility {

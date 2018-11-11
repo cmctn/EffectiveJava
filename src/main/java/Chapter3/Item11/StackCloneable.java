@@ -1,4 +1,4 @@
-package Chapter2.Item11;
+package Chapter3.Item11;
 
 import java.util.Arrays;
 import java.util.EmptyStackException;

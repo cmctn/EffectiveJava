@@ -1,4 +1,4 @@
-package Chapter1.Item6;
+package Chapter2.Item6;
 
 public class Sample {
 

@@ -1,4 +1,4 @@
-package Chapter3.Item20;
+package Chapter4.Item20;
 
 class Circle extends Figure {
     final double radius;

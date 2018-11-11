@@ -1,4 +1,4 @@
-package Chapter3.Item16;
+package Chapter4.Item16;
 
 import java.util.Collection;
 import java.util.Iterator;

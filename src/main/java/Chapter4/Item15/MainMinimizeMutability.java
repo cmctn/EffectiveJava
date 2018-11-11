@@ -1,4 +1,4 @@
-package Chapter3.Item15;
+package Chapter4.Item15;
 
 public class MainMinimizeMutability {
 

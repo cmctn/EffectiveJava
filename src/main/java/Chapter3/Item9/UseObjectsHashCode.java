@@ -1,4 +1,4 @@
-package Chapter2.Item9;
+package Chapter3.Item9;
 
 import java.util.Objects;
 

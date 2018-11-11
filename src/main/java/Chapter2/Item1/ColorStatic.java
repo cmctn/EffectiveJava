@@ -1,4 +1,4 @@
-package Chapter1.Item1;
+package Chapter2.Item1;
 
 public class ColorStatic {
 

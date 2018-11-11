@@ -1,4 +1,4 @@
-package Chapter3.Item20;
+package Chapter4.Item20;
 
 class Rectangle extends Figure {
     final double length;

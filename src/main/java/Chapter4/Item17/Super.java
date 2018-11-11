@@ -1,4 +1,4 @@
-package Chapter3.Item17;
+package Chapter4.Item17;
 
 public class Super {
     // Broken - constructor invokes an overridable method

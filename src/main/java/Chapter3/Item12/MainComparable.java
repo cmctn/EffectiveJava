@@ -1,4 +1,4 @@
-package Chapter2.Item12;
+package Chapter3.Item12;
 
 public class MainComparable {
 
